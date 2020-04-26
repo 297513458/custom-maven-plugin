@@ -4,9 +4,9 @@
 
 maven需加上插件
 <pre>
-        <plugin>
-                <groupId>cn.s2b</groupId>
-                <artifactId>custom-maven-plugin</artifactId>
-                <version>1.0-SNAPSHOT</version>
-            </plugin>
+        &lt;plugin&gt;
+                &lt;groupId&gt;cn.s2b&lt;/groupId&gt;
+                &lt;artifactId&gt;custom-maven-plugin&lt;/artifactId&gt;
+                &lt;version&gt;1.0-SNAPSHOT&lt;/version&gt;
+            &lt;/plugin&gt;
 </pre>
