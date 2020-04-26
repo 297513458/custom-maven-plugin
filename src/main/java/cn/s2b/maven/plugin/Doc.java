@@ -1,8 +1,8 @@
 package cn.s2b.maven.plugin;
 
+import cn.s2b.maven.plugin.doc.reflect.CustomMethod;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.serializer.SerializerFeature;
-import com.sxc.doc.reflect.CustomMethod;
 import org.apache.maven.model.Build;
 import org.apache.maven.plugin.AbstractMojo;
 import org.apache.maven.plugin.MojoExecutionException;
