@@ -29,7 +29,7 @@ public class Doc extends AbstractMojo {
     /**
      * @parameter property="scanPackage" default-value="com"
      */
-    @Parameter(required = false, defaultValue = "${scanPackage}")
+    @Parameter(required = true, defaultValue = "${scanPackage}")
     private String scanPackage;
     private String classPath;
     @Parameter(required = false, defaultValue = "${savePath}")
