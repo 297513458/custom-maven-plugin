@@ -33,7 +33,7 @@ public class Doc extends AbstractMojo {
      */
     private String scanPackage;
     private String classPath;
-    @Parameter(required = true, defaultValue = "${doc.savePath}")
+    @Parameter(required = false, defaultValue = "${savePath}")
     public String savePath;
     private Set<Object> dicInformation = new HashSet<Object>();
     private List<Class<?>> classes = new ArrayList<>();
@@ -78,7 +78,10 @@ public class Doc extends AbstractMojo {
             List<CustomMethod> list = Parse.parse(c);
             if (list != null && !list.isEmpty()) {
                 try {
-                    save(c.getTypeName(), list);
+                    if (savePath != null && savePath.length() > 0) {
+                        save(c.getTypeName(), list);
+                    } else
+                        System.out.println(JSON.toJSONString(list));
                 } catch (Exception e) {
                     this.getLog().warn("load class faild", e);
                 }
