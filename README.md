@@ -9,5 +9,6 @@
                 &lt;version&gt;1.0-SNAPSHOT&lt;/version&gt;
             &lt;/plugin&gt;
 </pre>
-### 2:在某个方法上面写上注解 #### @cn.s2b.maven.plugin.doc.annotation.ApiDoc("对外的url")
+### 2:在某个方法上面写上注解 
+   #### @cn.s2b.maven.plugin.doc.annotation.ApiDoc("对外的url")
 ### 3:运行maven custom:doc
