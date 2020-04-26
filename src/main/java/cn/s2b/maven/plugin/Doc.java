@@ -1,5 +1,4 @@
 package cn.s2b.maven.plugin;
-
 import cn.s2b.maven.plugin.doc.reflect.CustomMethod;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.serializer.SerializerFeature;
@@ -8,7 +7,6 @@ import org.apache.maven.plugin.AbstractMojo;
 import org.apache.maven.plugin.MojoExecutionException;
 import org.apache.maven.plugins.annotations.*;
 import org.apache.maven.project.MavenProject;
-
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -31,6 +29,7 @@ public class Doc extends AbstractMojo {
     /**
      * @parameter property="scanPackage" default-value="com"
      */
+    @Parameter(required = false, defaultValue = "${scanPackage}")
     private String scanPackage;
     private String classPath;
     @Parameter(required = false, defaultValue = "${savePath}")
@@ -69,7 +68,7 @@ public class Doc extends AbstractMojo {
 
     public String scanPackage() {
         if (scanPackage == null) {
-            scanPackage = "com.sxc";
+            scanPackage = "com";
         }
         this.getLog().info("scanPackage is =>" + scanPackage);
         getClasses(scanPackage);
