@@ -1,9 +1,5 @@
 package cn.s2b.maven.plugin.doc.reflect;
 
-
-
-import com.sxc.doc.reflect.TypeParam;
-
 import java.util.List;
 
 public class CustomMethod {
