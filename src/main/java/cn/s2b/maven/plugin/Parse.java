@@ -1,8 +1,8 @@
-package cn.n2b.maven.plugin;
+package cn.s2b.maven.plugin;
 
-import cn.n2b.maven.plugin.doc.annotation.ApiDoc;
-import cn.n2b.maven.plugin.doc.reflect.CustomMethod;
-import cn.n2b.maven.plugin.doc.reflect.TypeParam;
+import cn.s2b.maven.plugin.doc.annotation.ApiDoc;
+import cn.s2b.maven.plugin.doc.reflect.CustomMethod;
+import cn.s2b.maven.plugin.doc.reflect.TypeParam;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.serializer.SerializerFeature;
 import java.lang.annotation.Annotation;

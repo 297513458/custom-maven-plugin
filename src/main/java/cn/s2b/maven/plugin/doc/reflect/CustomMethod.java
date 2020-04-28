@@ -1,4 +1,4 @@
-package cn.n2b.maven.plugin.doc.reflect;
+package cn.s2b.maven.plugin.doc.reflect;
 
 import java.util.List;
 

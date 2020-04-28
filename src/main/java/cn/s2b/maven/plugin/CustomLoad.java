@@ -1,4 +1,4 @@
-package cn.n2b.maven.plugin;
+package cn.s2b.maven.plugin;
 
 import org.apache.maven.project.MavenProject;
 import java.io.File;
