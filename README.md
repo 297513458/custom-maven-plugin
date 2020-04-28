@@ -13,4 +13,4 @@
    #### @ApiDoc("对外的url")
 ### 3:运行mvn custom:doc -DscanPackage=cn.n2b(这里替换成需要扫描的包名)
 ### 扫描到的示例:
-    [{"api":"/gw/api","className":"TestDoc","methodName":"scanFilesWithExt","params":[{"javaType":true,"name":"arg0","typeName":"java.lang.String"},{"javaType":true,"name":"arg1","typeName":"java.lang.String"}],"type":{"javaType":false,"typeName":"java.util.List","value":"null"}}]
+[{"api":"/gw/api","className":"cn.n2b.maven.plugin.TestDoc","methodName":"scanFilesWithExt","params":[{"javaType":true,"name":"arg0","typeName":"java.lang.String"},{"javaType":true,"name":"arg1","typeName":"java.lang.String"}],"type":{"javaType":false,"typeName":"java.util.List","value":"null"}}]
