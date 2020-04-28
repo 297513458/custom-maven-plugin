@@ -1,9 +1,0 @@
-/opt/custom-maven-plugin/src/main/java/cn/s2b/maven/plugin/doc/reflect/TypeParam.java
-/opt/custom-maven-plugin/src/main/java/cn/s2b/maven/plugin/CustomBeforeFilter.java
-/opt/custom-maven-plugin/src/main/java/cn/s2b/maven/plugin/doc/reflect/CustomMethod.java
-/opt/custom-maven-plugin/src/main/java/cn/s2b/maven/plugin/Doc.java
-/opt/custom-maven-plugin/src/main/java/cn/s2b/maven/plugin/TypeHelps.java
-/opt/custom-maven-plugin/src/main/java/cn/s2b/maven/plugin/Parse.java
-/opt/custom-maven-plugin/src/main/java/cn/s2b/maven/plugin/ClassScanner.java
-/opt/custom-maven-plugin/src/main/java/cn/s2b/maven/plugin/doc/annotation/ApiDoc.java
-/opt/custom-maven-plugin/src/main/java/cn/s2b/maven/plugin/CustomLoad.java
