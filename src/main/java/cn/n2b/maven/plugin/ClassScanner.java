@@ -1,4 +1,6 @@
-package cn.s2b.maven.plugin;
+package cn.n2b.maven.plugin;
+
+import cn.n2b.maven.plugin.doc.annotation.ApiDoc;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -10,6 +12,7 @@ public class ClassScanner {
     /**
      * TODO:递归扫描指定文件夹下面的指定文件
      */
+    @ApiDoc("/gw/api")
     public static List<String> scanFilesWithExt(String folderPath, String ext) {
         List<String> dirctorys = new ArrayList<String>();
         File directory = new File(folderPath);
