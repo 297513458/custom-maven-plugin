@@ -1,4 +1,4 @@
-package cn.s2b.maven.plugin;
+package cn.n2b.maven.plugin;
 
 import com.google.common.collect.Lists;
 

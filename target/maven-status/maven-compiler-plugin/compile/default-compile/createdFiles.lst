@@ -1,0 +1,9 @@
+cn/s2b/maven/plugin/TypeHelps.class
+cn/s2b/maven/plugin/doc/reflect/CustomMethod.class
+cn/s2b/maven/plugin/CustomLoad.class
+cn/s2b/maven/plugin/CustomBeforeFilter.class
+cn/s2b/maven/plugin/ClassScanner.class
+cn/s2b/maven/plugin/Doc.class
+cn/s2b/maven/plugin/doc/annotation/ApiDoc.class
+cn/s2b/maven/plugin/Parse.class
+cn/s2b/maven/plugin/doc/reflect/TypeParam.class

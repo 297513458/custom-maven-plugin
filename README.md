@@ -10,7 +10,7 @@
             &lt;/plugin&gt;
 </pre>
 ### 2:在某个方法上面写上注解 
-   #### @cn.s2b.maven.plugin.doc.annotation.ApiDoc("对外的url")
+   #### @ApiDoc("对外的url")
 ### 3:运行mvn custom:doc -DscanPackage=cn.n2b(这里替换成需要扫描的包名)
 ### 扫描到的示例:
-    [{"api":"/gw/api","className":"cn.s2b.maven.plugin.ClassScanner","methodName":"scanFilesWithExt","params":[{"javaType":true,"name":"arg0","typeName":"java.lang.String"},{"javaType":true,"name":"arg1","typeName":"java.lang.String"}],"type":{"javaType":false,"typeName":"java.util.List","value":"null"}}]
+    [{"api":"/gw/api","className":"ClassScanner","methodName":"scanFilesWithExt","params":[{"javaType":true,"name":"arg0","typeName":"java.lang.String"},{"javaType":true,"name":"arg1","typeName":"java.lang.String"}],"type":{"javaType":false,"typeName":"java.util.List","value":"null"}}]

@@ -1,6 +1,7 @@
-package cn.s2b.maven.plugin;
+package cn.n2b.maven.plugin;
 
-import cn.s2b.maven.plugin.doc.annotation.ApiDoc;
+import cn.n2b.maven.plugin.doc.annotation.ApiDoc;
+
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;

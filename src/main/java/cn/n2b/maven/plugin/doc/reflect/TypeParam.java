@@ -1,4 +1,4 @@
-package cn.s2b.maven.plugin.doc.reflect;
+package cn.n2b.maven.plugin.doc.reflect;
 
 public class TypeParam {
     public String typeName;
