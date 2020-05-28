@@ -5,6 +5,8 @@ import cn.n2b.maven.plugin.doc.reflect.CustomMethod;
 import cn.n2b.maven.plugin.doc.reflect.TypeParam;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.serializer.SerializerFeature;
+import org.springframework.core.LocalVariableTableParameterNameDiscoverer;
+
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
@@ -42,12 +44,15 @@ public class Parse {
                     List<TypeParam> params = new ArrayList<>();
                     Class<?> returnType = m.getReturnType();
                     customMethod.setType(new TypeParam(returnType.getTypeName(), loadValue(returnType), TypeHelps.isJavaLangType(returnType.getName())));
+                    LocalVariableTableParameterNameDiscoverer pd= new LocalVariableTableParameterNameDiscoverer();
+                   int index=0;
+                    String[] paramNames= pd.getParameterNames(m);
                     java.lang.reflect.Parameter[] parameters = m.getParameters();
                     for (java.lang.reflect.Parameter pm : parameters) {
                         try {
                             TypeParam param = new TypeParam();
                             param.setJavaType(TypeHelps.isJavaLangType(pm.getType().getName()));
-                            param.setName(pm.getName());
+                            param.setName(paramNames[index++]);
                             param.setTypeName(pm.getType().getTypeName());
                             param.setValue(loadValue(pm.getType()));
                             params.add(param);
